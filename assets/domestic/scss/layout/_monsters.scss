@@ -1,5 +1,7 @@
 .monsters {
     background-color: $color-white;
-    width: 1020px;
-    height: 720px;
+    //width: 1020px;
+    //height: 720px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
 }

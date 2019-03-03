@@ -1,5 +1,7 @@
 .get-in-touch {
-    height: 564px;
-    width: 1020px;
+    //height: 564px;
+    //width: 1020px;
     background-color: $color-grey-dark;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
 }

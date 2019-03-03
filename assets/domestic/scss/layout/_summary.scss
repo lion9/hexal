@@ -1,5 +1,7 @@
 .summary {
-    width: 1020px;
-    height: 341px;
+    //width: 1020px;
+    //height: 341px;
     background-color: $color-green-base;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
 }

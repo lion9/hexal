@@ -15,10 +15,12 @@ body {
 
 .container {
     width: 1020px;
-    display: grid;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 63px 720px 341px 564px 43px;
 }
 
 

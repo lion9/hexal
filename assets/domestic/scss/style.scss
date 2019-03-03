@@ -1,23 +1,13 @@
 @import "abstracts/variables";
-//@import "abstracts/animations";
-//@import "abstracts/mixins";
-//@import "abstracts/typography";*/
+
+
 
 @import "base/base";
 
 
 
-//@import "layout/header";
-/*@import "layout/footer";
-//@import "layout/navigation";
-
-//@import "components/buttons";
-//@import "components/composition";
-//@import "components/feature-box";
-//@import "components/card";
-//@import "components/story";
-//@import "components/bg-video";
-//@import "components/form";
-//@import "components/popup";
-
-@import "pages/home"*/
+@import "layout/header";
+@import "layout/monsters";
+@import "layout/summary";
+@import "layout/get-in-touch";
+@import "layout/footer";

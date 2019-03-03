@@ -8,8 +8,18 @@
 }
 
 body {
-    padding: 3rem;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 62.5%; //10px/16px = 62.5% -> 10px;
 } 
+
+.container {
+    width: 1020px;
+    display: grid;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 
   

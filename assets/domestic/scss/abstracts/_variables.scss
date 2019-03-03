@@ -4,6 +4,7 @@ $color-white: white;
 
 $color-grey-light: #454545;
 $color-grey-dark: #323232;
+$color-grey-dark-2: #222222;
 $color-grey-form: #bebebe;
 $color-grey-form-light: #e0e0e0;
 
@@ -11,9 +12,11 @@ $color-green-base: #2eb398;
 $color-green-smith: #d7fcf5;
 $color-green-disigner: #20816d;
 
-
-
-
 //FONT SIZED
 
 $default-font-size: 1.6rem;
+
+//FONTS
+
+$font-primary: "Maven Pro", sans-serif;
+$font-secondary: "Lato", sans-serif;

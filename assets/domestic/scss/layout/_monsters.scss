@@ -32,7 +32,8 @@
     &__row__1 {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
-        margin-bottom: -38px;
+        bottom: -38px;
+        
 
         &__monster1 {
             background-image: url("../img/monster1.png" );
@@ -152,6 +153,7 @@
         right: 9.7%;
     }
 }
+
 
 .monster {
     transition: all .2s;

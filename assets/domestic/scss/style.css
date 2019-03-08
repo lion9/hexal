@@ -24,8 +24,17 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 63px 721px 340px 564px 43px;
-      grid-template-rows: 63px 721px 340px 564px 43px;
+  -ms-grid-rows: 63px 721px 341px 564px 43px;
+      grid-template-rows: 63px 721px 341px 564px 43px;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Maven Pro Regular"), local("MavenPro-Regular"), url(https://fonts.gstatic.com/s/mavenpro/v11/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 header {
@@ -34,6 +43,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  position: relative;
 }
 
 .monsters {
@@ -83,7 +93,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  margin-bottom: -38px;
+  bottom: -38px;
 }
 
 .monsters__row__1__monster1 {
@@ -261,6 +271,100 @@ header {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.summary__row {
+  width: 822px;
+  height: 316px;
+  border-right: 1px solid #219d84;
+  border-left: 1px solid #219d84;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 1fr;
+      grid-template-columns: 220px 1fr;
+}
+
+.summary__row__photo {
+  width: 180px;
+  height: 205px;
+  background-image: url("../img/summary_photo.png");
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+}
+
+.summary__row__text {
+  -webkit-align-self: start;
+      -ms-flex-item-align: start;
+              -ms-grid-row-align: start;
+          align-self: start;
+}
+
+.summary__row__text h1 {
+  padding-top: 48px;
+  color: #d7fcf5;
+  font-size: 1.8rem;
+  font-weight: 300;
+  word-spacing: 2px;
+  letter-spacing: .09px;
+  margin-left: -1px;
+}
+
+.summary__row__text h2 {
+  line-height: 19px;
+  color: #20816d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  word-spacing: 1.8px;
+  letter-spacing: -.18px;
+}
+
+.summary__row__text p {
+  font-family: Lato, sans-serif;
+  line-height: 22px;
+  padding: 14px 20px 0 0;
+  color: #d7fcf5;
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+.summary__social {
+  position: absolute;
+  right: 128px;
+  bottom: 66px;
+  color: #219d84;
+}
+
+.summary__social ul {
+  font-size: 0;
+}
+
+.summary__social__button {
+  margin-left: -1px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.summary__social a {
+  color: #219d84;
 }
 
 .get-in-touch {
@@ -305,5 +409,71 @@ header {
       -ms-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 99;
+}
+
+.triangle::before {
+  content: "";
+  width: 410px;
+  border-bottom: 1px solid #e4e9eb;
+  position: absolute;
+  top: -14px;
+  left: -480px;
+}
+
+.triangle::after {
+  content: "";
+  width: 410px;
+  border-bottom: 1px solid #e4e9eb;
+  position: absolute;
+  top: -14px;
+  left: 69px;
+}
+
+.fa-facebook-f {
+  background-color: #A4D9D2;
+}
+
+.fa-facebook-f:hover {
+  background-color: #c8e8e4;
+}
+
+.fa-twitter {
+  background-color: #6BC9BD;
+}
+
+.fa-twitter:hover {
+  background-color: #b6e4de;
+}
+
+.fa-google-plus-g {
+  background-color: #7DCEC3;
+}
+
+.fa-google-plus-g:hover {
+  background-color: #c7eae5;
+}
+
+.fa-pinterest-p {
+  background-color: #ABDBD5;
+}
+
+.fa-pinterest-p:hover {
+  background-color: #cfeae7;
+}
+
+.fa-linkedin-in {
+  background-color: #ABDBD5;
+}
+
+.fa-linkedin-in:hover {
+  background-color: #cfeae7;
+}
+
+.fa-dribbble {
+  background-color: #6CC9BD;
+}
+
+.fa-dribbble:hover {
+  background-color: #b7e4de;
 }
 /*# sourceMappingURL=style.css.map */

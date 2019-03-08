@@ -1,7 +1,85 @@
 .summary {
-    //width: 1020px;
-    //height: 341px;
     background-color: $color-green-base;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__row {
+        width: 822px;
+        height: 316px;
+        border-right: 1px solid $color-green-lines;
+        border-left: 1px solid $color-green-lines;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+
+        &__photo {
+            width: 180px;
+            height: 205px;
+            background-image: url("../img/summary_photo.png" );
+            justify-self: center;
+            align-self: center;
+        }
+
+        &__text {
+            align-self: start;
+
+            & h1 {
+                padding-top: 48px;
+                color: $color-green-smith;
+                font-size: 1.8rem;
+                font-weight: 300;
+                word-spacing: 2px;
+                letter-spacing: .09px;
+                margin-left: -1px;
+            }
+
+            & h2 {
+                line-height: 19px;
+                color: $color-green-disigner;
+                font-size: 1.1rem;
+                font-weight: 400;
+                word-spacing: 1.8px;
+                letter-spacing: -.18px;
+            }
+
+            & p {
+                font-family: Lato, sans-serif;
+                line-height: 22px;
+                padding: 14px 20px 0 0;
+                color: $color-green-smith;
+                font-size: .7rem;
+                font-weight: 400;
+                //word-spacing: 1px;
+                //letter-spacing: -.17px;
+            }
+        }
+    }
+
+    &__social {
+        position: absolute;
+        right: 128px;
+        bottom: 66px;
+        color: $color-green-lines;
+        
+        & ul {
+            font-size: 0; // eleminates margin between li elements - https://stackoverflow.com/questions/20805028/how-do-i-remove-li-element-margin
+        }
+        
+        &__button {
+            margin-left: -1px;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+    &__social a {
+        color: $color-green-lines;
+    }
+
 }

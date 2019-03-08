@@ -1,0 +1,45 @@
+.fa-facebook-f {
+    background-color: #A4D9D2;
+    &:hover {
+        background-color: lighten(#A4D9D2, 10%);
+    }
+}
+
+
+
+.fa-twitter {
+    background-color: #6BC9BD;
+    &:hover {
+        background-color: lighten(#6BC9BD, 20%);
+    }
+}
+
+
+.fa-google-plus-g {
+    background-color: #7DCEC3;
+    &:hover {
+        background-color: lighten(#7DCEC3, 20%);
+    }
+}
+
+.fa-pinterest-p {
+    background-color: #ABDBD5;
+    &:hover {
+        background-color: lighten(#ABDBD5, 10%);
+    }
+}
+
+.fa-linkedin-in {
+    background-color: #ABDBD5;
+    &:hover {
+        background-color: lighten(#ABDBD5, 10%);
+    }
+}
+
+.fa-dribbble {
+    background-color: #6CC9BD;
+    &:hover {
+        background-color: lighten(#6CC9BD, 20%);
+    }
+}
+

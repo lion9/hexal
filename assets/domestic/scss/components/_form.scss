@@ -42,7 +42,9 @@ form textarea:focus {
     margin-top: 14px;
     font-size: 12px;
     font-weight: 500;
+    letter-spacing: -.5px;
     font-stretch: condensed;
+    transition: all .2s;
 
     &:hover {
         transform: translateY(-1px);

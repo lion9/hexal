@@ -8,7 +8,9 @@
     &__copyright {
         color: $color-grey-light;
         margin-left: 40px;
-        letter-spacing: .1px;
+        margin-top: -3px;
+        letter-spacing: -.3px;
         font-size: 1.2em;
+        font-stretch: condensed;
     }
 }

@@ -9,6 +9,10 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 99;
+
+    @media screen and (max-width: 1800px) {
+        top: 62px;
+    }
 }
 
 .triangle::before {
@@ -18,6 +22,10 @@
     position: absolute;
     top: -14px;
     left: -480px;
+
+    @media screen and (max-width: $lg-screen) {
+        display: none;
+    }
 }
 
 .triangle::after {
@@ -27,4 +35,8 @@
     position: absolute;
     top: -14px;
     left: 69px;
+
+    @media screen and (max-width: $lg-screen) {
+        display: none;
+    }
 }

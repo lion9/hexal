@@ -3,9 +3,6 @@ header {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     position: relative;
-    
-    
-
 }
 
 nav {
@@ -28,8 +25,8 @@ nav {
     margin-top: 3px;
     margin-left: -1px;
     transform: translate(-50%, -50%);
-    background-image: url("/assets/domestic/img/logo.png");
-
+    background-image: url("../../domestic/img/logo.png");
+    z-index: 99;
 }
 
 nav {
@@ -43,11 +40,16 @@ nav a {
     text-decoration: none;
     font-size: .6rem;
     text-transform: uppercase;
+    transition: all .2s;
+
+    &:hover {
+        color: $color-green-base;
+    }
     
    
 }
 
-.portfolio {
+.portf {
     grid-column: 1 / 2;
     align-self: start;
     margin-left: 2px;

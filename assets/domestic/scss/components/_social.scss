@@ -1,13 +1,15 @@
 .fa-facebook-f {
+    width: 25px;
+    height: 24px;
     background-color: #A4D9D2;
     &:hover {
         background-color: lighten(#A4D9D2, 10%);
     }
 }
 
-
-
 .fa-twitter {
+    width: 27px;
+    height: 24px;
     background-color: #6BC9BD;
     &:hover {
         background-color: lighten(#6BC9BD, 20%);
@@ -16,6 +18,8 @@
 
 
 .fa-google-plus-g {
+    width: 26px;
+    height: 24px;
     background-color: #7DCEC3;
     &:hover {
         background-color: lighten(#7DCEC3, 20%);
@@ -23,6 +27,8 @@
 }
 
 .fa-pinterest-p {
+    width: 24px;
+    height: 24px;
     background-color: #ABDBD5;
     &:hover {
         background-color: lighten(#ABDBD5, 10%);
@@ -30,6 +36,8 @@
 }
 
 .fa-linkedin-in {
+    width: 25px;
+    height: 24px;
     background-color: #ABDBD5;
     &:hover {
         background-color: lighten(#ABDBD5, 10%);
@@ -37,6 +45,8 @@
 }
 
 .fa-dribbble {
+    width: 24px;
+    height: 24px;
     background-color: #6CC9BD;
     &:hover {
         background-color: lighten(#6CC9BD, 20%);

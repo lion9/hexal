@@ -44,12 +44,14 @@
         line-height: 21px;
         hyphens: auto;
         text-decoration: none;
+        word-spacing: 1px;
 
         &__contacts {
             margin-top: 36px;
             position: relative;
             line-height: 22px;
-            
+            word-spacing: .3px;
+            letter-spacing: -.3px;
         }
     }
 
@@ -77,6 +79,10 @@
     transform: translateX(-50%);
     top: 13px;
     z-index: 100;
+
+    @media screen and (max-width: $lg-screen) {
+        display: none;
+    }
 }
 
 .get-in-touch::after {
@@ -88,4 +94,8 @@
     transform: translateX(-50%);
     bottom: 11px;
     z-index: 100;
+
+    @media screen and (max-width: $lg-screen) {
+        display: none;
+    }
 }

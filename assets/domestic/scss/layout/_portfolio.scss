@@ -1,4 +1,4 @@
-.monsters {
+.portfolio {
     background-color: $color-white;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -6,6 +6,11 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 258px 168px 298px;
     position: relative;
+
+    @media screen and (max-width: $md-screen) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 
     &__row__1 *,
     &__row__2 *,
@@ -25,7 +30,7 @@
 
     &__row__1 :not(:last-child),
     &__row__2 :not(:last-child),
-    &__row__3 :not(:last-child)  {
+    &__row__3 :not(:last-child) {
         margin-right: 20px;
     }
 
@@ -33,11 +38,12 @@
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         bottom: -38px;
-        
-
+        background-size: contain;
+                
         &__monster1 {
             background-image: url("../img/monster1.png" );
             grid-column: 1 / 2;
+
         }
 
         &__monster2 {
@@ -124,46 +130,51 @@
         position: absolute;
         height: 102px;
         border-left: 1px solid $color-grey-lines;
+
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
     }
 
-    &__row__1::before,
-    &__row__1::after {
-        bottom: 53px;
-        bottom: 53px;
+        &__row__1::before,
+        &__row__1::after {
+            bottom: 53px;
+            bottom: 53px;
+        }
+
+        &__row__1::before {
+            left: 9.7%;
+        }
+        
+        &__row__1::after {
+            right: 9.7%;
+        }
+
+        &__row__3::before,
+        &__row__3::after {
+            top: 53px;
+        }
+
+        &__row__3::before {
+            left: 9.7%;
+        }
+
+        &__row__3::after {
+            right: 9.7%;
+        }
     }
 
-    &__row__1::before {
-        left: 9.7%;
-    }
-    
-    &__row__1::after {
-        right: 9.7%;
-    }
 
-    &__row__3::before,
-    &__row__3::after {
-        top: 53px;
-    }
-
-    &__row__3::before {
-        left: 9.7%;
-    }
-
-    &__row__3::after {
-        right: 9.7%;
-    }
-}
-
-
-.monster {
+.monsters {
     transition: all .2s;
     overflow: hidden;
 }
-.monster:hover {
+.monsters:hover {
     transform: scale(1.03);
 }
 
-.monsters::after {
+
+.portfolio::after {
     content: "";
     width: 94%;
     border-bottom: 1px solid $color-grey-lines;
@@ -172,4 +183,8 @@
     transform: translateX(-50%);
     bottom: 11px;
     z-index: 100;
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
 }
+

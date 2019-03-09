@@ -52,16 +52,17 @@
                 color: $color-green-smith;
                 font-size: .7rem;
                 font-weight: 400;
-                //word-spacing: 1px;
-                //letter-spacing: -.17px;
+                //font-stretch: condensed;
+                word-spacing: 3px;
+                letter-spacing: 0px;
             }
         }
     }
 
     &__social {
         position: absolute;
-        right: 128px;
-        bottom: 66px;
+        right: 121px;
+        bottom: 67px;
         color: $color-green-lines;
         
         & ul {
@@ -70,8 +71,6 @@
         
         &__button {
             margin-left: -1px;
-            width: 24px;
-            height: 24px;
             display: inline-block;
             font-size: 12px;
             text-align: center;

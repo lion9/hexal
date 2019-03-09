@@ -1,0 +1,46 @@
+/*.location { 
+    height: 11px;
+    margin: 0px;
+    padding-left: 20px;
+    background-image: url('../icons/location.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 9999;
+  }
+
+  .phone { 
+    height: 20px;
+    margin: 0px;
+    padding-left: 20px;
+    background-image: url('../icons/phone.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 9999;
+  }
+
+
+  .letter { 
+    height: 11px;
+    margin: 0px;
+    padding-left: 20px;
+    background-image: url('../icons/letter.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 9999;
+  }*/
+
+.fas {
+    font-size: 10px;
+    padding-right: 15px;
+    color: $color-green-base;
+    //justify-self: start;
+}  

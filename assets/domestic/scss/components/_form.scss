@@ -1,0 +1,45 @@
+form input[type=text],
+form input[type=email],
+form textarea,
+form textarea::placeholder,
+form textarea:focus,
+input:focus,
+input::placeholder {
+    width: 580px;
+    color: $color-grey-form;
+    font-family: Lato, sans-serif;
+    font-size: .7rem;
+    padding-bottom: 1px;
+    background-color: $color-grey-light;
+    outline: none;
+    border: none;
+}
+
+form input[type=text],
+form input[type=email] {
+    height: 38px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+
+form textarea,
+form textarea:focus {
+    padding-top: 12px;
+    height: 150px;
+    padding-left: 15px;
+    resize: none;
+    overflow: hidden;
+}
+
+#send-button {
+    width: 90px;
+    height: 37px;
+    color: $color-green-smith;
+    background-color: $color-green-base;
+    border: none;
+    float: right;
+    margin-top: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: condensed;
+}

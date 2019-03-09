@@ -1,7 +1,85 @@
 .get-in-touch {
-    //height: 564px;
-    //width: 1020px;
     background-color: $color-grey-dark;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
+    display: grid;
+    position: relative;
+    grid-column-gap: 12px;
+    grid-template-columns: 108px 580px 200px;
+    grid-template-rows: 130px 320px;
+    align-items: start;
+
+    &__form {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        &__heading--1,
+        &__heading--2 {
+            width: 100%;
+            position: absolute;
+            color: $color-grey-form-light;
+        }
+
+        &__heading--1 {
+            font-size: 30px;
+            top: 59px;
+            left: 121px;
+        }
+
+        &__heading--2 {
+            font-size: 18px;
+            top: 93px;
+            left: 122px;
+        }
+    
+    }
+
+    &__textcol {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        color: $color-grey-form;
+        margin-left: 10px;
+        margin-top: -1px;
+        font-size: 12px;
+        line-height: 21px;
+        hyphens: auto;
+
+        &__contacts {
+            margin-top: 36px;
+            position: relative;
+            line-height: 22px;
+            //display: grid;
+        }
+    }
+}
+
+#message_form {
+    margin-top: 134px;
+}
+
+.highlight {
+    color: $color-grey-form-light;
+    font-weight: bold;
+}
+
+.get-in-touch::before {
+    content: "";
+    width: 960px;
+    border-bottom: 1px solid #2b2b2b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 13px;
+    z-index: 100;
+}
+
+.get-in-touch::after {
+    content: "";
+    width: 960px;
+    border-bottom: 1px solid #2b2b2b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 11px;
+    z-index: 100;
 }

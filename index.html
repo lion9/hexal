@@ -11,14 +11,15 @@
     <title>Hexal Portfolio</title>
 </head>
 <body class="container">
-    <header class="header">
-        <div class="header__left-menu">
-            items
-        </div>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <div class="portfolio"><a href="" class="active">Portfolio</a></div>
+            <div class="about"><a href="">About</a></div>
+            <div class="blog"><a href="">Blog</a></div>
+            <div class="get-in-touch-header"><a href="">Get in touch</a></div>
+        </nav>
         <div class="triangle"></div>
-        <div class="header__right-menu">
-            items
-        </div>
     </header>
     <section class="monsters">
         <div class="monsters__row__1">
@@ -40,6 +41,15 @@
             <div class="monster monsters__row__3__monster12"></div>
             <div class="monster monsters__row__3__monster13"></div>
         </div>
+        <div class="slider">
+            <div class="slider__button"></div>
+            <div class="slider__button"></div>
+            <div class="slider__button active"></div>
+            <div class="slider__button"></div>
+            <div class="slider__button"></div>
+            <div class="slider__button"></div>
+        </div>
+
     </section>
     <section class="summary">
         <div class="summary__row">
@@ -70,7 +80,7 @@
             </div>  
             <form action="#" id="message_form">
                 <input type="text" name="firstname" placeholder="Name (Required)" required><br>
-                <input type="email" name="email" placeholder="Email (Required)"><br>
+                <input type="email" name="email" placeholder="Email (Required)" required><br>
                 <input type="text" name="subject" placeholder="Subject"><br>
                 <textarea class="message" value="Subject" placeholder="Write your message here..."></textarea>
                 <input type="submit" id="send-button" value="SEND">
@@ -81,10 +91,9 @@
                 <p><span class="highlight">Quisque Hendrerit</span>: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
             </div>
             <div class="get-in-touch__textcol__contacts">
-                
-                <p><span class="fas fa-map-marker-alt"></span>Elm St. 14/05 Lost City</p>
-                <p><span class="fas fa-phone"></span>+ 3528 331 86 35</p>
-                <p><span class="fas fa-envelope"></span>info@hexalcorp.com</p>
+                <p><span class="fas fa-map-marker-alt"></span>Elm St. 14/05 Lost City</p></a>
+                <p><a href="tel:555-555-5555"><span class="fas fa-phone"></span>+ 3528 331 86 35<a href="tel:555-555-5555"></a></p>
+                <p><a href="mailto:info@hexalcorp.com"><span class="fas fa-envelope"></span>info@hexalcorp.com</a></p>
             </div>
         </div>
         

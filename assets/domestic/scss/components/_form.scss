@@ -32,6 +32,7 @@ form textarea:focus {
 }
 
 #send-button {
+    font-family: Lato, sans-serif;
     width: 90px;
     height: 37px;
     color: $color-green-smith;
@@ -42,4 +43,14 @@ form textarea:focus {
     font-size: 12px;
     font-weight: 500;
     font-stretch: condensed;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: .2);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
 }
+

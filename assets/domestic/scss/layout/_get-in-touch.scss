@@ -43,13 +43,19 @@
         font-size: 12px;
         line-height: 21px;
         hyphens: auto;
+        text-decoration: none;
 
         &__contacts {
             margin-top: 36px;
             position: relative;
             line-height: 22px;
-            //display: grid;
+            
         }
+    }
+
+    &__textcol a {
+        color: $color-grey-form;
+        text-decoration: none;
     }
 }
 

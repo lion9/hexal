@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -44,6 +45,101 @@ header {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  height: 55px;
+  width: 64px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-top: 3px;
+  margin-left: -1px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("/assets/domestic/img/logo.png");
+}
+
+nav {
+  width: 370px;
+}
+
+nav a {
+  font-family: Lato, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: .6rem;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -webkit-align-self: start;
+      -ms-flex-item-align: start;
+              -ms-grid-row-align: start;
+          align-self: start;
+  margin-left: 2px;
+}
+
+.about {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin-left: -23px;
+}
+
+.about::before {
+  content: "•";
+  color: #454545;
+  margin: 0 10px;
+}
+
+.blog {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  margin-right: -16px;
+}
+
+.blog::after {
+  content: "•";
+  color: #454545;
+  margin: 0 10px;
+}
+
+.get-in-touch-header {
+  grid-column: 6 / -1;
+  margin-left: -8px;
+  margin-right: -2px;
+  -webkit-align-self: end;
+      -ms-flex-item-align: end;
+              -ms-grid-row-align: end;
+          align-self: end;
+}
+
+header .active {
+  color: #2eb398;
 }
 
 .monsters {
@@ -429,12 +525,18 @@ header {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  text-decoration: none;
 }
 
 .get-in-touch__textcol__contacts {
   margin-top: 36px;
   position: relative;
   line-height: 22px;
+}
+
+.get-in-touch__textcol a {
+  color: #bebebe;
+  text-decoration: none;
 }
 
 #message_form {
@@ -659,6 +761,7 @@ form textarea:focus {
 }
 
 #send-button {
+  font-family: Lato, sans-serif;
   width: 90px;
   height: 37px;
   color: #d7fcf5;
@@ -671,48 +774,61 @@ form textarea:focus {
   font-stretch: condensed;
 }
 
-/*.location { 
-    height: 11px;
-    margin: 0px;
-    padding-left: 20px;
-    background-image: url('../icons/location.png');
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    top: 6px;
-    left: 0;
-    z-index: 9999;
-  }
+#send-button:hover {
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
 
-  .phone { 
-    height: 20px;
-    margin: 0px;
-    padding-left: 20px;
-    background-image: url('../icons/phone.png');
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    top: 6px;
-    left: 0;
-    z-index: 9999;
-  }
+#send-button:active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
 
-
-  .letter { 
-    height: 11px;
-    margin: 0px;
-    padding-left: 20px;
-    background-image: url('../icons/letter.png');
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    top: 6px;
-    left: 0;
-    z-index: 9999;
-  }*/
 .fas {
   font-size: 10px;
-  padding-right: 15px;
   color: #2eb398;
+}
+
+.fa-map-marker-alt {
+  padding-right: 15px;
+  font-size: 10px;
+}
+
+.fa-phone {
+  padding-right: 12px;
+  font-size: 12px;
+  margin-left: -2px;
+}
+
+.fa-envelope {
+  padding-right: 12px;
+  font-size: 12px;
+  margin-left: -2px;
+}
+
+.slider {
+  height: 6px;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 3px;
+  bottom: 23px;
+  left: 30px;
+}
+
+.slider__button {
+  width: 6px;
+  height: 6px;
+  background-color: #ddd2c5;
+}
+
+.slider .active {
+  background-color: #8b8784;
 }
 /*# sourceMappingURL=style.css.map */

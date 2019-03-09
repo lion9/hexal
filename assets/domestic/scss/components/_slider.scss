@@ -1,0 +1,22 @@
+.slider {
+    height: 6px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3px;
+    bottom: 23px;
+    left: 30px;
+
+
+    &__button {
+        width: 6px;
+        height: 6px;
+        background-color: #ddd2c5; // #2b2b2b;
+
+
+    }
+
+    & .active {
+        background-color: #8b8784;
+    }
+}

@@ -46,13 +46,10 @@ form textarea:focus {
     font-stretch: condensed;
     transition: all .2s;
 
-    &:hover {
-        transform: translateY(-1px);
-        box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: .2);
-    }
-
+    &:hover,
     &:active {
-        transform: translateY(0);
+        background-color: darken($color-green-base, 10%);
+        box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: .2);
     }
 }
 

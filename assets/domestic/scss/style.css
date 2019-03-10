@@ -14,6 +14,10 @@ body {
   font-size: 62.5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1020px;
   position: absolute;
@@ -36,13 +40,14 @@ body {
   }
 }
 
-/* latin-ext */
+@font-face {
+  font-family: Lato;
+  src: url(../../../vendor/fonts/Lato-Regular.ttf);
+}
+
 @font-face {
   font-family: 'Maven Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Maven Pro Regular"), local("MavenPro-Regular"), url(https://fonts.gstatic.com/s/mavenpro/v11/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(../../../vendor/fonts/MavenPro-Regular.ttf);
 }
 
 ::-moz-selection {
@@ -100,7 +105,7 @@ nav {
 }
 
 nav a {
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif, sans-serif;
   color: white;
   text-decoration: none;
   font-size: .6rem;
@@ -178,15 +183,6 @@ header .active {
   -ms-grid-rows: 258px 168px 298px;
       grid-template-rows: 258px 168px 298px;
   position: relative;
-}
-
-@media screen and (max-width: 1100px) {
-  .portfolio {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-  }
 }
 
 .portfolio__row__1 *,
@@ -476,7 +472,7 @@ header .active {
 }
 
 .summary__row__text p {
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif, sans-serif;
   line-height: 22px;
   padding: 14px 20px 0 0;
   color: #d7fcf5;
@@ -494,6 +490,10 @@ header .active {
 }
 
 .summary__social ul {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 0;
 }
 
@@ -507,6 +507,7 @@ header .active {
 
 .summary__social a {
   color: #219d84;
+  text-decoration: none;
 }
 
 .get-in-touch {
@@ -542,6 +543,7 @@ header .active {
   width: 100%;
   position: absolute;
   color: #e0e0e0;
+  word-spacing: -.1px;
 }
 
 .get-in-touch__form__heading--1 {
@@ -662,7 +664,7 @@ header .active {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 25px 45px 0 45px;
+  border-width: 26px 45px 0 45px;
   border-color: #323232 transparent transparent transparent;
   position: absolute;
   top: 63px;
@@ -673,7 +675,7 @@ header .active {
   z-index: 99;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1300px) {
   .triangle {
     top: 62px;
   }
@@ -710,7 +712,7 @@ header .active {
 }
 
 .fa-facebook-f {
-  width: 25px;
+  width: 24px;
   height: 24px;
   background-color: #A4D9D2;
 }
@@ -871,18 +873,10 @@ form textarea:focus {
   transition: all .2s;
 }
 
-#send-button:hover {
-  -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
+#send-button:hover, #send-button:active {
+  background-color: #248a76;
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-#send-button:active {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .fas {
